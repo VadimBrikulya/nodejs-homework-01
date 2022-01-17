@@ -1,8 +1,15 @@
-const fs = require("fs/promises");
-const path = require("path");
-const contactsPath = require("./db/contact.json"); 
 
 
+const contactsPath = require("./db");
 
 
+const invokeAction = async ({ action, id, data }) => {
+    switch (action) {
+        case "getAll":
+            const contact = await contactsPath.getAll();
+            console.log(contact);
+            break;
+    }
+}
 
+invokeAction({ action: "getAll" });
