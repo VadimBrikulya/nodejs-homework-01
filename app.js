@@ -9,7 +9,13 @@ const invokeAction = async ({ action, id, data }) => {
             const contact = await contactsPath.getAll();
             console.log(contact);
             break;
+        case "getById":
+            const contacts = await contactsPath.getById(id);
+            console.log(contacts);
+            break;
+        default:
+      console.warn('\x1B[31m Unknown action type!');
     }
 }
-
-invokeAction({ action: "getAll" });
+const id = "6";
+invokeAction({ action: "getById", id});
