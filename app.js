@@ -37,16 +37,16 @@ const invokeAction = async ({ action, id, data }) => {
 // const id = "1";
 // invokeAction({ action: "getById", id});
 
-const newData = {
+// const newData = {
     
-    name: "Dratuti",
-    email: "Dratuti@magnis.org",
-    phone: "(098) 500-3020"
-}
+//     name: "Dratuti",
+//     email: "Dratuti@magnis.org",
+//     phone: "(098) 500-3020"
+// }
   
-invokeAction({ action: "add", data: newData });
+// invokeAction({ action: "add", data: newData });
 
-const updateId = "e6f73126-de0f-4d4e-b123-5f8bfc1dbd3c";
+const updateId = "20055ab0-98f7-452e-948f-7b90293a1887";
 
 const updateData = {
     
